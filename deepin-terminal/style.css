@@ -1,0 +1,994 @@
+/* -*- Mode: CSS; indent-tabs-mode: nil; tab-width: 4 -*-
+ * -*- coding: utf-8 -*-
+ *
+ * Copyright (C) 2011 ~ 2016 Deepin, Inc.
+ *               2011 ~ 2016 Wang Yong
+ *
+ * Author:     Wang Yong <wangyong@deepin.com>
+ * Maintainer: Wang Yong <wangyong@deepin.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */ 
+
+
+.frame {
+    /*border-style: none;*/
+    margin: 0;
+}
+
+.scrolledwindow {
+    color: #303030;
+}
+
+.scrolledwindow undershoot.top {
+    background-image: none;
+}
+
+.scrolledwindow undershoot.bottom {
+    background-image: none;
+}
+
+.scrolledwindow undershoot.left  {
+    background-image: none;
+}
+
+.scrolledwindow undershoot.right {
+    background-image: none;
+}
+
+.scrolledwindow overshoot.top {
+    background-image: none;
+}
+
+.scrolledwindow overshoot.bottom {
+    background-image: none;
+}
+
+.scrolledwindow overshoot.left  {
+    background-image: none;
+}
+
+.scrolledwindow overshoot.right {
+    background-image: none;
+}
+/* 激活窗口样式 */
+.window_dark_shadow_active {
+	background: transparent;
+	border-radius: 5px;
+    border: 1px solid #f7f656;
+	/*box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3),inset 0 1px rgba(0,0,0,0.7),inset 0 -1px rgba(0,0,0,0.7),inset 1px 0 rgba(0,0,0,0.7),inset -1px 0 rgba(0,0,0,0.7) ;*/
+}
+
+.window_dark_shadow_inactive {
+    background: transparent;
+    border-radius: 5px;
+	border: 1px solid #b9b9b5;
+   /* box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.15),inset 0 1px rgba(0,0,0,0.5),inset 0 -1px rgba(0,0,0,0.5),inset 1px 0 rgba(0,0,0,0.5),inset -1px 0 rgba(0,0,0,0.5) ;*/
+}
+
+.window_light_shadow_active {
+	background: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2),inset 0 1px rgba(0,0,0,0.2),inset 0 -1px rgba(0,0,0,0.2),inset 1px 0 rgba(0,0,0,0.2),inset -1px 0 rgba(0,0,0,0.2) ;
+}
+
+.window_light_shadow_inactive {
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.1),inset 0 1px rgba(0,0,0,0.15),inset 0 -1px rgba(0,0,0,0.15),inset 1px 0 rgba(0,0,0,0.15),inset -1px 0 rgba(0,0,0,0.15) ;
+}
+
+.window_noradius_shadow_active {
+	background: transparent;
+	border-radius: 0px;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3),inset 0 1px rgba(0,0,0,0.7),inset 0 -1px rgba(0,0,0,0.7),inset 1px 0 rgba(0,0,0,0.7),inset -1px 0 rgba(0,0,0,0.7) ;
+}
+
+.window_noradius_shadow_inactive {
+    background: transparent;
+    border-radius: 0px;
+    box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.15),inset 0 1px rgba(0,0,0,0.5),inset 0 -1px rgba(0,0,0,0.5),inset 1px 0 rgba(0,0,0,0.5),inset -1px 0 rgba(0,0,0,0.5) ;
+}
+
+.window_dark_noshadow_active {
+    border-radius: 0px;
+}
+
+.window_dark_noshadow_inactive {
+    border-radius: 0px;
+}
+
+.window_light_noshadow_active {
+    border-radius: 0px;
+}
+
+.window_light_noshadow_inactive {
+    border-radius: 0px;
+}
+
+.window_noradius_noshadow_active {
+	border-radius: 0px;
+}
+
+.window_noradius_noshadow_inactive {
+    border-radius: 0px;
+}
+
+.dialog_shadow_active {
+	background: transparent;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3),0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.dialog_shadow_inactive {
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.15),0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.dialog_noshadow_active {
+	border-radius: 0px;
+}
+
+.dialog_noshadow_inactive {
+    border-radius: 0px;
+}
+/* 搜索框　*/
+.search_dark_box {
+    background: rgba(32,32,32,0.8);
+    /*border-radius: 0px 0px 0px 10px;*/
+	border-radius:10px 0 0 10px;
+	border: 1px dashed #b9b9b5;
+    /*border: 1px solid rgba(1,1,1,0.10);*/
+}
+
+.search_light_box {
+    background: rgba(255,255,255,0.8);
+    border-radius: 0px 0px 0px 10px;
+    border: 1px solid rgba(0,0,0,0.10);
+}
+
+.search_dark_entry {
+	background: transparent;
+	border: 0px solid rgba(0,0,0,0.10);
+	font-size: 11px;
+    border-radius: 4px;
+    padding: 0px 6px;
+}
+
+.search_dark_entry:focus {
+	color: white;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.search_dark_entry selection:focus {
+	color: white;
+	background-color: #61B5F8;
+	font-size: 11px;
+}
+
+.search_light_entry {
+	background: transparent;
+	border: 0px solid rgba(0,0,0,0.10);
+	font-size: 11px;
+    border-radius: 4px;
+    padding: 0px 6px;
+}
+
+.search_light_entry:focus {
+	color: #303030;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.search_light_entry selection:focus {
+	color: white;
+	background-color: #61B5F8;
+	font-size: 11px;
+}
+/*　滚动条样式　*/
+.dark_scrollbar {
+	padding-right: 2px;
+	background: transparent;
+	box-shadow: none;
+    border: none;
+    min-width: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.dark_scrollbar slider {
+	background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 4px;
+    border: none;
+    box-shadow:inset 1px 1px   rgba(255,255,255,0.05),inset -1px -1px rgba(255,255,255,0.05);
+    min-width: 4px;
+}
+
+.dark_scrollbar slider:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+    box-shadow:inset 1px 1px   rgba(255,255,255,0.1),inset -1px -1px rgba(255,255,255,0.05);
+    border-radius: 4px;
+    border: none;
+    min-width: 8px;
+}
+
+.dark_scrollbar slider:hover:active {
+	background-color: rgba(255, 255, 255, 0.3);
+    box-shadow:inset 1px 1px   rgba(255,255,255,0.05),inset -1px -1px rgba(255,255,255,0.05);
+    border-radius: 4px;
+    border: none;
+    min-width: 8px;
+}
+
+.light_scrollbar {
+	padding-right: 2px;
+	background: transparent;
+	box-shadow: none;
+    border: none;
+    min-width: 8px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.light_scrollbar slider {
+ 	background-color: rgba(16, 16, 16, 0.5);
+    box-shadow:none;
+  	border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 4px;
+}
+
+.light_scrollbar slider:hover {
+ 	background-color: rgba(16, 16, 16, 0.7);
+ 	box-shadow: none;
+ 	border: 1px solid transparent;
+ 	border-radius: 5px;
+    min-width: 8px;
+}
+
+.light_scrollbar slider:hover:active {
+ 	background-color: rgba(16, 16, 16, 0.8);
+ 	box-shadow: none;
+ 	border: 1px solid transparent;
+    border-radius: 5px;
+    min-width: 8px;
+}
+
+.switcher_scrollbar {
+	padding-right: 2px;
+	background: transparent;
+	box-shadow: none;
+	border: 1px solid transparent;
+    min-width: 0px;
+}
+
+.switcher_scrollbar slider {
+	background-color: transparent;
+    box-shadow:none;
+	border: 1px;
+	border-color: transparent;
+    min-width: 0px;
+}
+/*可以理解为右击弹框样式*/
+.preference_comboboxtext {
+	min-height: 2px;
+}
+
+.preference_comboboxtext button {
+	border-radius: 4px;
+    padding: 0 6px;
+}
+
+.preference_comboboxtext arrow {
+	min-height: 16px;
+	min-width: 11px;
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
+.preference_comboboxtext menu {
+	border-radius:4px;
+    font-size:12px;
+    color: #303030;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.preference_comboboxtext menu > arrow{
+	border-radius:0px;
+	background:white;
+}
+
+.preference_comboboxtext arrow {
+	min-height: 16px;
+	min-width: 11px;
+}
+
+.preference_comboboxtext menu menuitem {
+    padding-left: 6px;
+}
+
+.preference_comboboxtext menu menuitem:hover{
+	background-color:#2ca7f8;
+	color:white;
+}
+
+.preference_comboboxtext button.combo {
+	padding-top: 0px;
+	padding-bottom: 0px;
+    color:#303030;
+    font-size: 12px;
+    background-image:linear-gradient(-180deg,#fff 0%,#fdfdfd 100%);
+    border:none;
+    box-shadow: 0 1px rgba(0,0,0,0.02),inset 0  1px  rgba(0,0,0,0.1),inset 0 -1px  rgba(0,0,0,0.1),inset 1px 0 rgba(0,0,0,0.1),inset -1px 0 rgba(0,0,0,0.1);
+}
+
+.preference_comboboxtext button.combo:focus {
+    box-shadow: 0 1px rgba(0,0,0,0.04),inset 0  1px  #2ca7f8,inset 0 -1px  #2ca7f8,inset 1px 0 #2ca7f8,inset -1px 0 #2ca7f8;
+}
+
+.preference_comboboxtext button.combo:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color:white;
+    background-image:linear-gradient(-180deg,#8CCFFF 0%, #4BB8FF 100%);
+    box-shadow: 0 1px rgba(0,0,0,0.04),inset 0  1px  rgba(0,118,243,0.2),inset 0 -1px  rgba(0,118,243,0.2),inset 1px 0 rgba(0,118,243,0.2),inset -1px 0 rgba(0,118,243,0.2);
+}
+
+.preference_entry {
+    color:#303030;
+	min-height: 18px;
+    background-color:white;
+    border:1px solid rgba(0,0,0,0.1);
+	font-size: 11px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 4px;
+    padding: 0px 6px;
+}
+
+.preference_entry selection:focus {
+    color:white;
+    min-height: 18px;
+	background-color: #61B5F8;
+    border:1px solid #2ca7f8;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.preference_entry:focus {
+    color:black;
+    min-height: 18px;
+    background-color:white;
+    border:1px solid #2ca7f8;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.preference_spinbutton:not(.vertical) button {
+	min-height: 24px;
+    min-width: 20px;
+    padding: 0 4px;
+	color:#303030;
+    background-image:linear-gradient(-180deg,#fff 0%,#fdfdfd 100%);
+    border:0px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px rgba(0,0,0,0.02),inset 0  1px  rgba(0,0,0,0.1),inset 0 -1px  rgba(0,0,0,0.1),inset 1px 0 rgba(0,0,0,0.1),inset -1px 0 rgba(0,0,0,0.1);
+
+}
+
+.preference_spinbutton:not(.vertical) button:last-child {
+	min-height: 24px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    background-image:linear-gradient(-180deg,#fff 0%,#fdfdfd 100%);
+    border:0px solid rgba(1,0,0,0.1);
+    border-radius:0 4px 4px 0;
+    box-shadow: 0 1px rgba(0,0,0,0.02),inset 0  1px  rgba(0,0,0,0.1),inset 0 -1px  rgba(0,0,0,0.1),inset 1px 0 rgba(0,0,0,0.0),inset -1px 0 rgba(0,0,0,0.1);
+
+}
+.preference_spinbutton:not(.vertical) button:hover {
+	min-height: 24px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    color:white;
+    background-image:linear-gradient(-180deg,#8CCFFF 0%, #4BB8FF 100%);
+    box-shadow: 0 1px rgba(0,0,0,0.04),inset 0  1px  rgba(0,118,243,0.2),inset 0 -1px  rgba(0,118,243,0.2),inset 1px 0 rgba(0,118,243,0.2),inset -1px 0 rgba(0,118,243,0.2);
+
+}
+.preference_spinbutton:not(.vertical) button:active {
+	min-height: 24px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    color:white;
+    background-image:linear-gradient(-180deg,#0B8CFF 0%, #0AA1FF 100%);
+    box-shadow: 0 1px rgba(0,0,0,0.04),inset 0  1px  rgba(29,129,255,0.30),inset 0 -1px  rgba(29,129,255,0.30),inset 1px 0 rgba(29,129,255,0.30),inset -1px 0 rgba(29,129,255,0.30);
+
+}
+
+.preference_spinbutton:not(.vertical) entry {
+	min-height: 23px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    background-color:white;
+    color:#303030;
+    border:1px solid rgba(0,0,0,0.1);
+    border-width:1px 0 1px 1px;
+	font-size: 11px;
+    border-radius: 4px 0 0 4px;
+    padding: 0 6px;
+}
+
+.preference_spinbutton:not(.vertical) entry selection {
+    color:white;
+    background-color:#2ca7f8;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.preference_spinbutton:not(.vertical) entry selection:focus {
+	font-size: 11px;
+    min-height: 18px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.preference_label {
+    color: #303030;
+    font-size: 12px;
+}
+
+.dialog_title {
+	color: #303030;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.dialog_content {
+	color: #303030;
+	font-size: 12px;
+}
+/* 主页*/
+.homepage {
+   color: #004DE6;
+   font-size: 13px;
+ /*  border-bottom:1px solid #ff0000 !important;*/
+}
+
+.acknowledgments {
+	color: #004DE6;
+	font-size: 13px;
+}
+
+.remote_search_light_entry {
+	background: transparent;
+	border: 0px solid rgba(0,0,0,0.10);
+	font-size: 11px;
+}
+
+.remote_search_light_entry:focus {
+	color: black;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.remote_search_light_entry selection:focus {
+	color: white;
+	background-color: #61B5F8;
+	font-size: 11px;
+}
+
+.remote_search_dark_entry {
+	background: transparent;
+	border: 0 solid rgba(0,0,0,0.10);
+	font-size: 11px;
+}
+
+.remote_search_dark_entry:focus {
+	color: white;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.remote_search_dark_entry selection:focus {
+	color: white;
+	background-color: #61B5F8;
+	font-size: 11px;
+}
+
+.remote_search_label_dark {
+	color: #ffffff;
+}
+
+.remote_search_label_light {
+    color: #000000;
+}
+/*密码框样式　关闭眼睛样式　*/
+.password_invisible_entry {
+    color:#303030;
+	min-height: 18px;
+    background-color:white;
+    border:1px solid #afafaf; /*rgba(0,0,0,0.1);*/
+	border-right:1px solid white;
+	border-radius:4px 0 0 4px;
+	letter-spacing: 2px;
+	font-size: 11px;
+    padding: 0px 6px;
+}
+
+.password_invisible_entry:focus {
+    color:black;
+    min-height: 18px;
+    background-color:white;
+    border:1px solid #2ca7f8;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+/*跟证书框同一个样式*/
+.password_visible_entry {
+    color:#303030;
+	min-height: 18px;
+    background-color:white;
+    border:1px solid #afafaf;/* rgba(0,0,0,0.1);*/
+	border-right:1px solid white;
+	border-radius:4px 0 0 4px;
+	letter-spacing: 2px;
+	font-size: 11px;
+    padding: 0px 6px;
+}
+
+.password_visible_entry:focus {
+    color:black;
+    min-height: 18px;
+    background-color:white;
+    border:1px solid #2ca7f8;
+	font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+/*添加远程服务样式*/
+.file_add_entry {
+    color:#303030;
+    min-height: 18px;
+    background-color:white;
+    border:1px solid #afafaf;/*rgba(0,0,0,0.5);*/
+	border-right:1px solid white;
+	border-radius:4px 0 0 4px;
+	font-size: 11px;
+    padding: 0px 6px;
+}
+
+.file_add_entry:focus {
+    color:black;
+    min-height: 18px;
+    /*background-color:white;*/
+    border:1px solid #2ca7f8;
+    font-size: 11px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.preference_first_segment {
+	color: #303030;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.preference_second_segment {
+	color: #303030;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.preference_title {
+	color: #303030;
+	font-size: 13px;
+}
+
+.remote_server_label {
+	color: #303030;
+	font-weight: bold;
+}
+
+.dialog_button_left_text {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#303030;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 5px;
+}
+
+.dialog_button_left_text:hover,
+.dialog_button_left_action:hover,
+.dialog_button_left_warning:hover,
+.dialog_button_left_text:focus,
+.dialog_button_left_action:focus,
+.dialog_button_left_warning:focus {
+    background-image: linear-gradient(-180deg,#8ccfff 0%, #4bb8ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #3cabfd;
+    border-radius: 0 0 0 5px;
+}
+
+.dialog_button_left_text:active,
+.dialog_button_left_action:active,
+.dialog_button_left_warning:active {
+    background-image: linear-gradient(-180deg,#0b8cff 0%, #0aa1ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #0f97ff;
+    border-radius: 0 0 0 5px;
+}
+
+
+.dialog_button_left_action {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#0087ff;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 5px;  
+}
+
+
+.dialog_button_left_warning {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#ff5a5a;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 5px; 
+}
+/*右边弹框样式*/
+.dialog_button_right_text {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#303030;
+    box-shadow: none;
+    border-width: 1px 0 0 0;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: transparent;
+    border-radius: 0 0 5px 0;
+}
+
+.dialog_button_right_text:hover,
+.dialog_button_right_action:hover,
+.dialog_button_right_warning:hover,
+.dialog_button_right_text:focus,
+.dialog_button_right_action:focus,
+.dialog_button_right_warning:focus {
+    background-image: linear-gradient(-180deg,#8ccfff 0%, #4bb8ff 100%);
+    color:white;
+    box-shadow: inset 1px 0 #3cabfd;
+    transition: all 200ms ease;
+    border-width: 1px 0 0 0px;
+    border-color: #3cabfd;
+    border-radius: 0 0 5px 0;
+}
+.dialog_button_right_text:active,
+.dialog_button_right_action:active,
+.dialog_button_right_warning:active {
+    background-image: linear-gradient(-180deg,#0b8cff 0%, #0aa1ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 0 0 0px;
+    border-color: #0f97ff;
+    border-radius: 0 0 5px 0;
+}
+
+.dialog_button_right_action {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#0087ff;
+    box-shadow: none;
+    border-width: 1px 0 0 0px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: transparent;
+    border-radius: 0 0 5px 0; 
+}
+
+.dialog_button_right_warning {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#ff5a5a;
+    box-shadow: none;
+    border-width: 1px 0 0 0px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: transparent;
+    border-radius: 0 0 5px 0; 
+}
+
+
+.dialog_button_text {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#303030;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 5px 5px;
+}
+
+.dialog_button_text:hover,
+.dialog_button_action:hover,
+.dialog_button_warning:hover,
+.dialog_button_text:focus,
+.dialog_button_action:focus,
+.dialog_button_warning:focus {
+    background-image: linear-gradient(-180deg,#8ccfff 0%, #4bb8ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #3cabfd;
+    border-radius: 0 0 5px 5px;
+}
+
+.dialog_button_text:active,
+.dialog_button_action:active,
+.dialog_button_warning:active {
+    background-image: linear-gradient(-180deg,#0b8cff 0%, #0aa1ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #0f97ff;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.dialog_button_action {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#0087ff;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 5px 5px;  
+}
+
+
+.dialog_button_warning {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#ff5a5a;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 5px 5px; 
+}
+
+.dialog_noradius_button_left_text {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#303030;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 0;
+}
+
+.dialog_noradius_button_left_text:hover,
+.dialog_noradius_button_left_action:hover,
+.dialog_noradius_button_left_warning:hover,
+.dialog_noradius_button_left_text:focus,
+.dialog_noradius_button_left_action:focus,
+.dialog_noradius_button_left_warning:focus {
+    background-image: linear-gradient(-180deg,#8ccfff 0%, #4bb8ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #3cabfd;
+    border-radius: 0 0 0 0;
+}
+
+.dialog_noradius_button_left_text:active,
+.dialog_noradius_button_left_action:active,
+.dialog_noradius_button_left_warning:active {
+    background-image: linear-gradient(-180deg,#0b8cff 0%, #0aa1ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #0f97ff;
+    border-radius: 0 0 0 0;
+}
+
+
+.dialog_noradius_button_left_action {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#0087ff;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 0;  
+}
+
+
+.dialog_noradius_button_left_warning {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#ff5a5a;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 0; 
+}
+
+.dialog_noradius_button_right_text {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#303030;
+    box-shadow: none;
+    border-width: 1px 0 0 0px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: transparent;
+    border-radius: 0 0 0 0;
+}
+
+.dialog_noradius_button_right_text:hover,
+.dialog_noradius_button_right_action:hover,
+.dialog_noradius_button_right_warning:hover,
+.dialog_noradius_button_right_text:focus,
+.dialog_noradius_button_right_action:focus,
+.dialog_noradius_button_right_warning:focus {
+    background-image: linear-gradient(-180deg,#8ccfff 0%, #4bb8ff 100%);
+    color:white;
+    box-shadow: inset 1px 0 #3cabfd;
+    transition: all 200ms ease;
+    border-width: 1px 0 0 0px;
+    border-color: #3cabfd;
+    border-radius: 0 0 0 0;
+}
+.dialog_noradius_button_right_text:active,
+.dialog_noradius_button_right_action:active,
+.dialog_noradius_button_right_warning:active {
+    background-image: linear-gradient(-180deg,#0b8cff 0%, #0aa1ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 0 0 0px;
+    border-color: #0f97ff;
+    border-radius: 0 0 0 0;
+}
+
+.dialog_noradius_button_right_action {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#0087ff;
+    box-shadow: none;
+    border-width: 1px 0 0 0px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: transparent;
+    border-radius: 0 0 0 0; 
+}
+
+.dialog_noradius_button_right_warning {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#ff5a5a;
+    box-shadow: none;
+    border-width: 1px 0 0 0px;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: transparent;
+    border-radius: 0 0 0 0; 
+}
+
+
+.dialog_noradius_button_text {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#303030;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 0;
+}
+
+.dialog_noradius_button_text:hover,
+.dialog_noradius_button_action:hover,
+.dialog_noradius_button_warning:hover,
+.dialog_noradius_button_text:focus,
+.dialog_noradius_button_action:focus,
+.dialog_noradius_button_warning:focus {
+    background-image: linear-gradient(-180deg,#8ccfff 0%, #4bb8ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #3cabfd;
+    border-radius: 0 0 0 0;
+}
+
+.dialog_noradius_button_text:active,
+.dialog_noradius_button_action:active,
+.dialog_noradius_button_warning:active {
+    background-image: linear-gradient(-180deg,#0b8cff 0%, #0aa1ff 100%);
+    color:white;
+    box-shadow: none;
+    transition: all 200ms ease;
+    border-width: 1px 1px 0 0;
+    border-color: #0f97ff;
+    border-radius: 0 0 0 0;
+}
+
+
+.dialog_noradius_button_action {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#0087ff;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 0;  
+}
+
+
+.dialog_noradius_button_warning {
+    background-image: linear-gradient(-180deg,#ffffff 0%, #ffffff 100%);
+    color:#ff5a5a;
+    box-shadow: none;
+    border-width: 1px 1px 0 0;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0 0 0 0; 
+}
+
+.add_button_light {
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 100%);
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.02), inset 0px 1px 0px 0px rgba(255,255,255,0.60);
+    border-radius: 4px;     
+    color: #303030;
+}
+
+.add_button_light:hover {
+    background-image: linear-gradient(-180deg, #8CCFFF 0%, #4BB8FF 97%);
+    border: 1px solid rgba(0,117,243,0.20);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.add_button_light:active {
+    background-image: linear-gradient(-180deg, #0B8CFF 0%, #0AA1FF 100%);
+    border: 1px solid rgba(29,129,255,0.30);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
+    border-radius: 4px;    
+    color: #ffffff;
+}
+/*添加按钮*/
+.add_button_dark {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    border-radius: 4px;     
+    color: #ffffff;
+}
+
+.add_button_dark:active {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    border-radius: 4px;
+    color: #2ca7f8;/*#ffffff;*/
+}
+
+.add_button_dark:hover {
+    background: #2ca7f8;/*rgba(255, 255, 255, 0.1);*/
+    border: 0px;
+    border-radius: 4px;    
+    color: #ffffff;/*#2ca7f8;*/
+}
