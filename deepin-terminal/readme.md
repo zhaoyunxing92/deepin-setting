@@ -6,7 +6,7 @@
 
 用linux主要是用它的terminal,但是deepin的terminal不是很理想,我也在[github](https://github.com/linuxdeepin/deepin-terminal/issues/133)上提交了issues但是没有人回复,当你在一个窗口工作时还好,但是窗口多打开多时不会找不到你用的窗口,于是决定自己修改它的样式.
 
-`/usr/share/deepin-terminal` 样式主要是在这个目录下的`style.css` 我也添加了一些注释,tab菜单样式在`theme`目录下
+`/usr/share/deepin-terminal` 样式主要是在这个目录下的`style.css` 我也添加了一些注释,tab菜单样式在`theme`目录下,修改完成后在命令窗口执行`reset`生效
 
 ## 远程管理
 

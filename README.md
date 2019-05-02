@@ -13,4 +13,5 @@
 ## 做出的修改
 
 - [x] [deepin-terminal](./deepin-terminal) 
-- [x] 
+- [x] [bashrc](./bashrc)
+
