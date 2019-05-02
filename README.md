@@ -10,8 +10,7 @@
 * deepin的技术好像不是很成熟会出现死机情况
 * 睡眠功能没有,你会发现它睡眠一样不会省电
 
-## 做出的修改
+## 修改的配置
 
 - [x] [deepin-terminal](./deepin-terminal) 
 - [x] [bashrc](./bashrc)
-
