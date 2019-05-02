@@ -1,5 +1,5 @@
 # deepin-setting
-这个项目主要是记录在使用deepin系统中的一些配置
+这个项目主要是记录在使用deepin系统中的一些配置,在使用deepin中最好结合的整理的[docker](https://github.com/zhaoyunxing92/docker-case)一起使用,解决你安装软件的痛苦
 
 ## 使用deepin将失去什么
 
